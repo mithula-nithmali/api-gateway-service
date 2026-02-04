@@ -13,4 +13,16 @@ spring:
 server:
   port: 9000
 
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    urls[0].name: Product Service
+    urls[0].url: /aggregate/product-service/v3/api-docs
+    urls[1].name: Order Service
+    urls[1].url: /aggregate/order-service/v3/api-docs
+    urls[2].name: Inventory Service
+    urls[2].url: /aggregate/inventory-service/v3/api-docs
+  api-docs:
+    path: /api-docs
+
 
